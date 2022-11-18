@@ -1,0 +1,184 @@
+.person {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__photo {
+    width: 315px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  &__name {
+    margin-top: 23px;
+    @include fontStyle(transparent, $font-hero, $font-bold, 1.21);
+    background-image: $gradient-redtext;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__position {
+    margin-top: 15px;
+    @include fontStyle($decor-text, $font-h3caps, $font-regular, 1.571);
+  }
+
+  &__link {
+    margin-top: 10px;
+    @include fontStyle($active-regular, $font-h4, $font-regular, 1.25);
+  }
+
+  &__link:hover {
+    color: $accent-color;
+  }
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    @include fontStyle($main-color, $font-h3caps, $font-bold, 1.214);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+}
+
+.decor-line--person {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 4px;
+}
+
+// Tablet sd
+@media screen and (min-width: $tablet-sd) {
+  .person {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    &__photo {
+      width: 300px;
+    }
+
+    &__info {
+      margin-left: 30px;
+      margin-top: 90px;
+    }
+  }
+
+  .decor-line--person {
+    margin-bottom: 8px;
+  }
+}
+
+// Tablet hd
+@media screen and (min-width: $tablet-hd) {
+  .container .header__left.header__left--person {
+    margin-top: 0;
+  }
+
+  .container.footer__container.footer__container--person {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .person {
+    position: relative;
+    margin-top: 60px;
+
+    &__photo {
+      position: absolute;
+    }
+
+    &__info {
+      width: 544px;
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+    &__name {
+      margin-top: 5px;
+    }
+
+    &__resume {
+      width: 544px;
+      margin-left: auto;
+    }
+  }
+
+  .decor-line--person {
+    width: 544px;
+    margin-left: auto;
+  }
+}
+
+// Desktop sd
+@media screen and (min-width: $desktop-sd) {
+  .container.container__person {
+    padding: 0 180px 0;
+  }
+
+  .person {
+    &__photo {
+      width: 400px;
+      height: 500px;
+    }
+
+    &__info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 620px;
+    }
+
+    &__resume,
+    &__name {
+      width: 620px;
+    }
+
+    &__position {
+      margin-right: 26px;
+    }
+
+    &__link {
+      position: relative;
+      margin-right: 26px;
+    }
+
+    &__link::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      left: -16px;
+      background-color: $decor-separator;
+    }
+  }
+
+  .decor-line--person {
+    width: 620px;
+  }
+}
+
+// Desktop hd
+@media screen and (min-width: $desktop-hd) {
+  .container.container__person {
+    padding: 0 280px 0;
+  }
+
+  .person {
+    margin-top: 30px;
+
+    &__resume,
+    &__name,
+    &__info {
+      width: 900px;
+    }
+  }
+}

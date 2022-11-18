@@ -1,0 +1,141 @@
+.container.header__container--team {
+  padding: 0;
+}
+
+.team {
+  padding-bottom: 60px;
+
+  &__item {
+    position: relative;
+    margin-top: 29px;
+  }
+
+  &__image {
+    width: 315px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin-top: 9px;
+    @include fontStyle($main-color, $font-h4, $font-bold, 1.218);
+  }
+
+  &__position {
+    margin-top: 5px;
+    @include fontStyle($decor-text, $font-h3caps, $font-regular, 1.571);
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $decor-bg url(/images/svg/arrow-team.svg) no-repeat 50% 50%;
+  }
+
+  &__link:hover {
+    background-image: url(/images/svg/arrow-team-hover.svg);
+  }
+}
+
+.decor-line--team {
+  background-color: transparent;
+}
+
+.services__title--team {
+  margin-top: 30px;
+}
+
+// Tablet sd
+@media screen and (min-width: $tablet-sd) {
+  .header__navigation1--team {
+    padding-top: 60px;
+  }
+
+  .container.header__container--team {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .header__left {
+      margin-top: 25px;
+    }
+  }
+
+  .services__title--team {
+    margin-top: 50px;
+  }
+
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+
+    &__item {
+      width: calc((100% - 60px) / 2);
+      margin-top: 60px;
+    }
+
+    &__image {
+      width: 294px;
+      height: 400px;
+    }
+  }
+}
+
+// Tablet hd
+@media screen and (min-width: $tablet-hd) {
+  .header__navigation1--team {
+    padding-top: 48px;
+  }
+
+  .services__title--team {
+    margin: 62px 120px 0 120px;
+  }
+
+  .team {
+    &__item {
+      width: calc((100% - 120px) / 3);
+      margin-top: 60px;
+    }
+
+    &__image {
+      width: 262px;
+    }
+  }
+}
+
+// Desktop sd
+@media screen and (min-width: $desktop-sd) {
+  .team {
+    &__image {
+      width: 400px;
+    }
+  }
+}
+
+// Desktop hd
+@media screen and (min-width: $desktop-hd) {
+  .container.header__container--team {
+    padding-left: 160px;
+    padding-right: 160px;
+
+    .header__left {
+      margin-top: 10px;
+    }
+  }
+
+  .header__navigation1--team {
+    padding-top: 20px;
+  }
+
+  .team {
+    &__image {
+      width: 493px;
+    }
+  }
+}

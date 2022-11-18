@@ -1,0 +1,56 @@
+// Colors
+$main-color: #323264;
+$alt-color: #46466e;
+$soft-color: #686887;
+
+$accent-color: #f0145a;
+
+$active-regular: #24a3ff;
+$active-hover: #0085ff;
+$active-active: #006ccf;
+
+$decor-bg: #f5f5fa;
+$decor-alt: #ededf7;
+$decor-text: #b3b3ba;
+$decor-separator: #e6e6f0;
+
+// Gradients
+$gradient-regular: linear-gradient(
+  128.63deg,
+  #323264 0%,
+  #323264 73.96%,
+  #a54b5f 100%
+);
+$gradient-soft: linear-gradient(
+  42.01deg,
+  #323264 14.33%,
+  #323264 51.39%,
+  #7a425e 87.53%
+);
+$gradient-red: linear-gradient(323.35deg, #f0145a 6.7%, #693264 70.36%);
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+$gradient-redtext: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+
+//Font-size
+$font-hero: 38px;
+$font-h2: 30px;
+$font-h3: 22px;
+$font-h3caps: 14px;
+$font-h4: 16px;
+$font-list: 18px;
+
+//Font-weight
+$font-regular: 400;
+$font-bold: 700;
+
+// Media width
+$mobile: 375px;
+$tablet-sd: 768px;
+$tablet-hd: 1024px;
+$desktop-sd: 1440px;
+$desktop-hd: 1920px;

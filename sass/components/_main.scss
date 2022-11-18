@@ -1,0 +1,579 @@
+.main {
+  flex: 1 1 auto;
+}
+
+.hero {
+  &__title {
+    margin-top: 30px;
+    @include fontStyle(transparent, $font-h2, $font-bold, 1.23);
+    @include gradient-text($gradient-redtext);
+  }
+
+  &__title--homepage {
+    margin: 130px 30px 0;
+    text-align: center;
+    @include fontStyle(#fff, $font-hero, $font-bold, 1.218);
+  }
+  &__description {
+    margin-top: 28px;
+    @include fontStyle(inherit, 19px, $font-regular, 1.58);
+  }
+
+  &__description1 {
+    margin-top: 21px;
+  }
+
+  .scroll {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 159px auto 0;
+    background-image: url(/images/svg/scroll.svg);
+  }
+
+  .scroll:hover {
+    background-image: url(/images/svg/scroll-pink.svg);
+  }
+}
+
+.hero__achievements {
+  margin-top: 30px;
+  border-left: 4px solid $decor-separator;
+
+  li {
+    margin-bottom: 43px;
+    margin-left: 30px;
+  }
+
+  li:last-child {
+    margin-bottom: 30px;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin-left: 40px;
+    margin-bottom: 9px;
+    @include fontStyle(transparent, 36px, $font-bold, 1.22);
+    @include gradient-text($gradient-redtext);
+  }
+
+  p {
+    line-height: 1.218;
+  }
+
+  &--experience span::before {
+    @extend %hero-icons;
+    background-image: url(/images/svg/achievements/Experience.svg);
+  }
+
+  &--clients span::before {
+    @extend %hero-icons;
+    background-image: url(/images/svg/achievements/Clients.svg);
+  }
+
+  &--hours span::before {
+    @extend %hero-icons;
+    background-image: url(/images/svg/achievements/Probono.svg);
+  }
+}
+
+.container.team__container {
+  padding: 0;
+}
+
+.team {
+  &__description {
+    margin: 20px 30px 0;
+    @include fontStyle(inherit, 19px, $font-regular, 1.58);
+  }
+
+  &__photo {
+    height: 114px;
+    background-image: url(/images/jpg/all-team/mobile.jpg);
+    background-repeat: no-repeat;
+  }
+  &__slogan {
+    margin: 30px 30px 60px;
+    @include fontStyle(transparent, $font-h2, $font-bold, 1.21);
+    @include gradient-text($gradient-redtext);
+  }
+}
+
+.advantages {
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+    @include fontStyle($decor-text, $font-h2, $font-bold, 1.219);
+    transform: translate(100%, 0);
+    animation: linear 20s infinite running homepage;
+  }
+
+  &__item {
+    margin-right: 30px;
+    white-space: nowrap;
+
+    &--active {
+      background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 64px;
+    @include fontStyle(#fff, 20px, $font-bold, 1.219);
+  }
+
+  &__title::before {
+    position: absolute;
+    left: 0;
+    top: -33px;
+    content: "";
+    width: 315px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include fontStyle(#fff, 19px, $font-regular, 1.578);
+  }
+
+  @keyframes homepage {
+    from {
+      transform: translateX(375px);
+    }
+    to {
+      transform: translateX(-1050px);
+    }
+  }
+}
+
+.services {
+  @include fontStyle($active-regular, $font-h3caps, $font-bold, 1.219);
+
+  .container.services__container--services {
+    margin-top: 33px;
+  }
+
+  &__link {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__link:hover {
+    color: $accent-color;
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    right: -14px;
+    bottom: 3px;
+    width: 12px;
+    height: 12px;
+    background-image: url(/images/svg/arrow-right.svg);
+    background-repeat: no-repeat;
+  }
+
+  &__link:hover::after {
+    background-image: url(/images/svg/arrow-right-pink.svg);
+  }
+
+  &__title {
+    margin-top: 10px;
+    @include fontStyle(transparent, $font-h2, $font-bold, 1.23);
+    @include gradient-text($gradient-redtext);
+  }
+
+  &__list {
+    padding-bottom: 60px;
+
+    .list__image {
+      width: 92px;
+      height: 92px;
+      margin-top: 30px;
+      border-radius: 24px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .list__image--1 {
+      background-image: url(/images/svg/services/1.svg);
+    }
+
+    .list__image--2 {
+      background-image: url(/images/svg/services/2.svg);
+    }
+    .list__image--3 {
+      background-image: url(/images/svg/services/3.svg);
+    }
+    .list__image--4 {
+      background-image: url(/images/svg/services/4.svg);
+    }
+    .list__image--5 {
+      background-image: url(/images/svg/services/5.svg);
+    }
+    .list__image--6 {
+      background-image: url(/images/svg/services/6.svg);
+    }
+
+    .list__title {
+      width: 300px;
+      margin-top: 30px;
+      @include fontStyle($active-regular, $font-h3, $font-bold, 1.219);
+    }
+
+    .list__title:hover {
+      color: $accent-color;
+    }
+
+    .list__description {
+      margin-top: 15px;
+      @include fontStyle(#fff, $font-h4, $font-regular, 1.625);
+    }
+  }
+}
+
+// Tablet sd
+@media screen and (min-width: 768px) {
+  .hero {
+    &__title {
+      margin-top: 50px;
+      font-size: 38px;
+    }
+
+    &__title--homepage {
+      margin-top: 260px;
+    }
+
+    &__description {
+      margin-top: 25px;
+    }
+
+    &__description1 {
+      margin-top: 20px;
+    }
+
+    .scroll {
+      margin-top: 417px;
+    }
+  }
+
+  .advantages {
+    &__list {
+      margin-top: 90px;
+      font-size: $font-hero;
+      line-height: 1.218;
+    }
+
+    &__title {
+      margin-top: 124px;
+      font-size: $font-h2;
+      line-height: 1.219;
+    }
+
+    &__title::before {
+      width: 100%;
+      top: -64px;
+    }
+
+    &__description {
+      margin-bottom: 60px;
+    }
+  }
+
+  .services {
+    &__title {
+      font-size: $font-hero;
+      line-height: 1.219;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & > li {
+        width: calc((100% - 60px) / 2);
+      }
+
+      .list__image {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .team {
+    margin-top: 60px;
+    &__photo {
+      height: 234px;
+      margin-bottom: 60px;
+      background-image: url(/images/jpg/all-team/tablet.jpg);
+    }
+
+    &__description {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    &__slogan {
+      width: 600px;
+      margin-left: 60px;
+      margin-right: 60px;
+      line-height: 1.219;
+      font-size: $font-hero;
+    }
+  }
+}
+
+// Tablet hd
+@media screen and (min-width: $tablet-hd) {
+  .hero {
+    &__container {
+      display: flex;
+    }
+
+    .scroll {
+      margin-top: 289px;
+    }
+
+    &__tablethd {
+      max-width: 486px;
+      margin-right: 30px;
+    }
+
+    &__title {
+      margin-top: 65px;
+    }
+
+    &__title--homepage {
+      margin-top: 250px;
+    }
+
+    &__achievements {
+      height: 322px;
+      margin-top: 63px;
+    }
+  }
+
+  .team {
+    &__photo {
+      height: 312px;
+      background-image: url(/images/jpg/all-team/tablet-hd.jpg);
+    }
+
+    &__description {
+      margin: 0 0 20px;
+    }
+
+    &__tablethd {
+      display: flex;
+    }
+
+    &__text {
+      max-width: 482px;
+      margin: 0 60px 60px;
+    }
+
+    &__slogan {
+      width: 362px;
+      margin: 0;
+    }
+  }
+
+  .advantages {
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+      display: block;
+      animation: none;
+      transform: none;
+      margin-top: 74px;
+      width: calc((100% - 114px) / 2);
+    }
+
+    &__item {
+      margin-top: 30px;
+      margin-right: 0px;
+      text-align: end;
+    }
+
+    &__text {
+      width: calc((100% - 114px) / 2);
+    }
+
+    &__title {
+      margin-top: 100px;
+    }
+
+    &__title::before {
+      left: -64px;
+      top: 0;
+      width: 4px;
+      height: 303px;
+    }
+
+    &__description {
+      margin-bottom: 40px;
+    }
+  }
+
+  .services__list {
+    & > li {
+      width: calc((100% - 120px) / 3);
+    }
+
+    .list__title {
+      padding-right: 40px;
+    }
+  }
+}
+
+// Desktop sd
+@media screen and (min-width: $desktop-sd) {
+  .hero {
+    &__tablethd {
+      max-width: 662px;
+      margin-left: 120px;
+    }
+
+    &__description,
+    &__description1 {
+      font-size: 19px;
+      line-height: 1.578;
+    }
+    &__achievements {
+      margin-right: 120px;
+    }
+
+    .scroll {
+      margin-top: 305px;
+    }
+  }
+
+  .hero__title--homepage {
+    margin-top: 266px;
+  }
+
+  .team {
+    &__photo {
+      height: 438px;
+      background-image: url(/images/jpg/all-team/desktop-sd.jpg);
+    }
+
+    &__text {
+      margin-left: 180px;
+      padding-bottom: 10px;
+      max-width: 658px;
+    }
+  }
+
+  .advantages {
+    justify-content: flex-start;
+
+    &__list {
+      width: fit-content;
+      margin-left: 120px;
+      margin-right: 124px;
+    }
+
+    &__text {
+      width: 581px;
+      margin-top: 30px;
+    }
+
+    &__title::before {
+      top: -40px;
+    }
+
+    &__description {
+      margin-bottom: 105px;
+    }
+  }
+
+  .services__list {
+    .list__title {
+      width: 350px;
+    }
+  }
+}
+
+// Desktop hd
+@media screen and (min-width: $desktop-hd) {
+  .hero {
+    &__title--homepage {
+      margin-top: 361px;
+    }
+
+    &__tablethd {
+      max-width: 942px;
+    }
+    .hero__container--homepage {
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .scroll {
+      margin-top: 405px;
+    }
+  }
+
+  .team {
+    &__photo {
+      height: 584px;
+      background-image: url(/images/jpg/all-team/desktop-hd.jpg);
+    }
+
+    &__tablethd {
+      margin: 0 100px;
+    }
+
+    &__text {
+      max-width: 938px;
+    }
+  }
+
+  .advantages {
+    &__title {
+      margin-top: 140px;
+    }
+    &__title::before {
+      top: -75px;
+    }
+
+    &__text {
+      width: 860px;
+    }
+
+    &__description {
+      margin-bottom: 133px;
+    }
+  }
+
+  .container.services__container--homepage {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .services .container.services__container--services {
+    margin-top: 63px;
+  }
+}

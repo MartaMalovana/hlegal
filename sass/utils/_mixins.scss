@@ -1,0 +1,18 @@
+@mixin fontStyle($color, $size, $weight, $height) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin flexpProps($justify, $aline) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $aline;
+}
+
+@mixin gradient-text($gradient) {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $gradient;
+}
