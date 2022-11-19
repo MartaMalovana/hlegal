@@ -1645,6 +1645,7 @@ a.header__lang--active:hover {
 @media screen and (min-width: 768px) {
   .publications .publications__container {
     padding: 29px 60px 30px;
+    margin-top: 60px;
   }
   .publications__tablet {
     display: flex;
@@ -2130,7 +2131,7 @@ a.header__lang--active:hover {
   width: 375px;
   margin: 0 auto;
   padding: 0 30px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .container--homepage {
   padding: 0;
