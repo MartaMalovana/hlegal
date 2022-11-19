@@ -28,14 +28,14 @@
     width: 42px;
     height: 42px;
     margin: 159px auto 0;
-    background-image: url(/images/svg/scroll.svg);
+    background-image: url(../../images/svg/scroll.svg);
     transition-property: background-image;
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(linear);
   }
 
   .scroll:hover {
-    background-image: url(/images/svg/scroll-pink.svg);
+    background-image: url(../../images/svg/scroll-pink.svg);
   }
 }
 
@@ -68,17 +68,17 @@
 
   &--experience span::before {
     @extend %hero-icons;
-    background-image: url(/images/svg/achievements/Experience.svg);
+    background-image: url(../../images/svg/achievements/Experience.svg);
   }
 
   &--clients span::before {
     @extend %hero-icons;
-    background-image: url(/images/svg/achievements/Clients.svg);
+    background-image: url(../../images/svg/achievements/Clients.svg);
   }
 
   &--hours span::before {
     @extend %hero-icons;
-    background-image: url(/images/svg/achievements/Probono.svg);
+    background-image: url(../../images/svg/achievements/Probono.svg);
   }
 }
 
@@ -94,7 +94,7 @@
 
   &__photo {
     height: 114px;
-    background-image: url(/images/jpg/all-team/mobile.jpg);
+    background-image: url(../../images/jpg/all-team/mobile.jpg);
     background-repeat: no-repeat;
   }
   &__slogan {
@@ -193,7 +193,7 @@
     bottom: 3px;
     width: 12px;
     height: 12px;
-    background-image: url(/images/svg/arrow-right.svg);
+    background-image: url(../../images/svg/arrow-right.svg);
     background-repeat: no-repeat;
     transition-property: background-image;
     transition-duration: 350ms;
@@ -201,7 +201,7 @@
   }
 
   &__link:hover::after {
-    background-image: url(/images/svg/arrow-right-pink.svg);
+    background-image: url(../../images/svg/arrow-right-pink.svg);
   }
 
   &__title {
@@ -224,23 +224,23 @@
     }
 
     .list__image--1 {
-      background-image: url(/images/svg/services/1.svg);
+      background-image: url(../../images/svg/services/1.svg);
     }
 
     .list__image--2 {
-      background-image: url(/images/svg/services/2.svg);
+      background-image: url(../../images/svg/services/2.svg);
     }
     .list__image--3 {
-      background-image: url(/images/svg/services/3.svg);
+      background-image: url(../../images/svg/services/3.svg);
     }
     .list__image--4 {
-      background-image: url(/images/svg/services/4.svg);
+      background-image: url(../../images/svg/services/4.svg);
     }
     .list__image--5 {
-      background-image: url(/images/svg/services/5.svg);
+      background-image: url(../../images/svg/services/5.svg);
     }
     .list__image--6 {
-      background-image: url(/images/svg/services/6.svg);
+      background-image: url(../../images/svg/services/6.svg);
     }
 
     .list__title {
@@ -341,7 +341,7 @@
     &__photo {
       height: 234px;
       margin-bottom: 60px;
-      background-image: url(/images/jpg/all-team/tablet.jpg);
+      background-image: url(../../images/jpg/all-team/tablet.jpg);
     }
 
     &__description {
@@ -392,7 +392,7 @@
   .team {
     &__photo {
       height: 312px;
-      background-image: url(/images/jpg/all-team/tablet-hd.jpg);
+      background-image: url(../../images/jpg/all-team/tablet-hd.jpg);
     }
 
     &__description {
@@ -492,7 +492,7 @@
   .team {
     &__photo {
       height: 438px;
-      background-image: url(/images/jpg/all-team/desktop-sd.jpg);
+      background-image: url(../../images/jpg/all-team/desktop-sd.jpg);
     }
 
     &__text {
@@ -556,7 +556,7 @@
   .team {
     &__photo {
       height: 584px;
-      background-image: url(/images/jpg/all-team/desktop-hd.jpg);
+      background-image: url(../../images/jpg/all-team/desktop-hd.jpg);
     }
 
     &__tablethd {

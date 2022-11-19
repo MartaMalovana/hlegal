@@ -94,14 +94,14 @@ button {
 .header__logo {
   width: 86px;
   height: 32px;
-  background-image: url(/images/svg/logo.svg), url(/images/svg/slash.svg);
+  background-image: url(../../images/svg/logo.svg), url(../../images/svg/slash.svg);
   background-position-x: 0, 72px;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, 12px 26px;
   margin-top: 15px;
 }
 .header__logo--homepage {
-  background-image: url(/images/svg/logo-white.svg), url(/images/svg/slash.svg);
+  background-image: url(../../images/svg/logo-white.svg), url(../../images/svg/slash.svg);
 }
 .header__currentpage {
   position: relative;
@@ -175,7 +175,7 @@ a.header__lang--active:hover {
 .header__burger {
   width: 32px;
   height: 32px;
-  background-image: url(/images/svg/burger-line.svg), url(/images/svg/burger-line.svg), url(/images/svg/burger-line.svg);
+  background-image: url(../../images/svg/burger-line.svg), url(../../images/svg/burger-line.svg), url(../../images/svg/burger-line.svg);
   background-repeat: no-repeat;
   background-position-x: 7px;
   background-position-y: 9px, 15px, 21px;
@@ -187,7 +187,7 @@ a.header__lang--active:hover {
   border-radius: 8px;
 }
 .header__burger--homepage {
-  background-image: url(/images/svg/burger-white.svg), url(/images/svg/burger-white.svg), url(/images/svg/burger-white.svg);
+  background-image: url(../../images/svg/burger-white.svg), url(../../images/svg/burger-white.svg), url(../../images/svg/burger-white.svg);
 }
 
 .header__menu {
@@ -230,7 +230,7 @@ a.header__lang--active:hover {
   right: 12px;
   width: 32px;
   height: 32px;
-  background-image: url(/images/svg/menu-close.svg);
+  background-image: url(../../images/svg/menu-close.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -239,7 +239,7 @@ a.header__lang--active:hover {
 }
 
 .background {
-  background-image: url(/images/svg/h.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  background-image: url(../../images/svg/h.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   background-repeat: no-repeat;
   overflow: hidden;
   border-radius: 0 0 12px 12px;
@@ -341,7 +341,7 @@ a.header__lang--active:hover {
   .header__logo--homepage {
     margin-top: 30px;
     background-size: 130px 60px;
-    background-image: url(/images/svg/logo-white.svg);
+    background-image: url(../../images/svg/logo-white.svg);
   }
   .header__currentpage {
     margin-top: 20px;
@@ -588,13 +588,13 @@ a.header__lang--active:hover {
   width: 42px;
   height: 42px;
   margin: 159px auto 0;
-  background-image: url(/images/svg/scroll.svg);
+  background-image: url(../../images/svg/scroll.svg);
   transition-property: background-image;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(linear);
 }
 .hero .scroll:hover {
-  background-image: url(/images/svg/scroll-pink.svg);
+  background-image: url(../../images/svg/scroll-pink.svg);
 }
 
 .hero__achievements {
@@ -628,13 +628,13 @@ a.header__lang--active:hover {
   line-height: 1.218;
 }
 .hero__achievements--experience span::before {
-  background-image: url(/images/svg/achievements/Experience.svg);
+  background-image: url(../../images/svg/achievements/Experience.svg);
 }
 .hero__achievements--clients span::before {
-  background-image: url(/images/svg/achievements/Clients.svg);
+  background-image: url(../../images/svg/achievements/Clients.svg);
 }
 .hero__achievements--hours span::before {
-  background-image: url(/images/svg/achievements/Probono.svg);
+  background-image: url(../../images/svg/achievements/Probono.svg);
 }
 
 .container.team__container {
@@ -650,7 +650,7 @@ a.header__lang--active:hover {
 }
 .team__photo {
   height: 114px;
-  background-image: url(/images/jpg/all-team/mobile.jpg);
+  background-image: url(../../images/jpg/all-team/mobile.jpg);
   background-repeat: no-repeat;
 }
 .team__slogan {
@@ -762,14 +762,14 @@ a.header__lang--active:hover {
   bottom: 3px;
   width: 12px;
   height: 12px;
-  background-image: url(/images/svg/arrow-right.svg);
+  background-image: url(../../images/svg/arrow-right.svg);
   background-repeat: no-repeat;
   transition-property: background-image;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(linear);
 }
 .services__link:hover::after {
-  background-image: url(/images/svg/arrow-right-pink.svg);
+  background-image: url(../../images/svg/arrow-right-pink.svg);
 }
 .services__title {
   margin-top: 10px;
@@ -794,22 +794,22 @@ a.header__lang--active:hover {
   background-position: 50% 50%;
 }
 .services__list .list__image--1 {
-  background-image: url(/images/svg/services/1.svg);
+  background-image: url(../../images/svg/services/1.svg);
 }
 .services__list .list__image--2 {
-  background-image: url(/images/svg/services/2.svg);
+  background-image: url(../../images/svg/services/2.svg);
 }
 .services__list .list__image--3 {
-  background-image: url(/images/svg/services/3.svg);
+  background-image: url(../../images/svg/services/3.svg);
 }
 .services__list .list__image--4 {
-  background-image: url(/images/svg/services/4.svg);
+  background-image: url(../../images/svg/services/4.svg);
 }
 .services__list .list__image--5 {
-  background-image: url(/images/svg/services/5.svg);
+  background-image: url(../../images/svg/services/5.svg);
 }
 .services__list .list__image--6 {
-  background-image: url(/images/svg/services/6.svg);
+  background-image: url(../../images/svg/services/6.svg);
 }
 .services__list .list__title {
   width: 300px;
@@ -892,7 +892,7 @@ a.header__lang--active:hover {
   .team__photo {
     height: 234px;
     margin-bottom: 60px;
-    background-image: url(/images/jpg/all-team/tablet.jpg);
+    background-image: url(../../images/jpg/all-team/tablet.jpg);
   }
   .team__description {
     margin-left: 60px;
@@ -929,7 +929,7 @@ a.header__lang--active:hover {
   }
   .team__photo {
     height: 312px;
-    background-image: url(/images/jpg/all-team/tablet-hd.jpg);
+    background-image: url(../../images/jpg/all-team/tablet-hd.jpg);
   }
   .team__description {
     margin: 0 0 20px;
@@ -1004,7 +1004,7 @@ a.header__lang--active:hover {
   }
   .team__photo {
     height: 438px;
-    background-image: url(/images/jpg/all-team/desktop-sd.jpg);
+    background-image: url(../../images/jpg/all-team/desktop-sd.jpg);
   }
   .team__text {
     margin-left: 180px;
@@ -1052,7 +1052,7 @@ a.header__lang--active:hover {
   }
   .team__photo {
     height: 584px;
-    background-image: url(/images/jpg/all-team/desktop-hd.jpg);
+    background-image: url(../../images/jpg/all-team/desktop-hd.jpg);
   }
   .team__tablethd {
     margin: 0 100px;
@@ -1725,13 +1725,13 @@ a.header__lang--active:hover {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #f5f5fa url(/images/svg/arrow-team.svg) no-repeat 50% 50%;
+  background: #f5f5fa url(../../images/svg/arrow-team.svg) no-repeat 50% 50%;
   transition-property: background-image;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__link:hover {
-  background-image: url(/images/svg/arrow-team-hover.svg);
+  background-image: url(../../images/svg/arrow-team-hover.svg);
 }
 
 .decor-line--team {
@@ -1969,7 +1969,7 @@ a.header__lang--active:hover {
   }
 }
 .header__logo.header__logo--services {
-  background-image: url(/images/svg/logo-white.svg), url(/images/svg/slash.svg);
+  background-image: url(../../images/svg/logo-white.svg), url(../../images/svg/slash.svg);
 }
 
 .header__currentpage--services {
@@ -1985,7 +1985,7 @@ a.header__lang--active:hover {
 .service-entry__image {
   width: 92px;
   height: 92px;
-  background: #ffffff url(/images/svg/services/1.svg) no-repeat 50% 50%;
+  background: #ffffff url(../../images/svg/services/1.svg) no-repeat 50% 50%;
   background-size: 64px 64px;
   border-radius: 24px;
 }

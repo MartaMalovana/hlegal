@@ -34,7 +34,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: $decor-bg url(/images/svg/arrow-team.svg) no-repeat 50% 50%;
+    background: $decor-bg url(../../images/svg/arrow-team.svg) no-repeat 50% 50%;
     transition-property: background-image;
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,7 +42,7 @@
   }
 
   &__link:hover {
-    background-image: url(/images/svg/arrow-team-hover.svg);
+    background-image: url(../../images/svg/arrow-team-hover.svg);
   }
 }
 

@@ -48,7 +48,7 @@
   &__logo {
     width: 86px;
     height: 32px;
-    background-image: url(/images/svg/logo.svg), url(/images/svg/slash.svg);
+    background-image: url(../../images/svg/logo.svg), url(../../images/svg/slash.svg);
     background-position-x: 0, 72px;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 12px 26px;
@@ -56,8 +56,8 @@
   }
 
   &__logo--homepage {
-    background-image: url(/images/svg/logo-white.svg),
-      url(/images/svg/slash.svg);
+    background-image: url(../../images/svg/logo-white.svg),
+      url(../../images/svg/slash.svg);
   }
 
   &__currentpage {
@@ -140,8 +140,8 @@ a.header__lang--active:hover {
 .header__burger {
   width: 32px;
   height: 32px;
-  background-image: url(/images/svg/burger-line.svg),
-    url(/images/svg/burger-line.svg), url(/images/svg/burger-line.svg);
+  background-image: url(../../images/svg/burger-line.svg),
+    url(../../images/svg/burger-line.svg), url(../../images/svg/burger-line.svg);
   background-repeat: no-repeat;
   background-position-x: 7px;
   background-position-y: 9px, 15px, 21px;
@@ -154,8 +154,8 @@ a.header__lang--active:hover {
   }
 
   &--homepage {
-    background-image: url(/images/svg/burger-white.svg),
-      url(/images/svg/burger-white.svg), url(/images/svg/burger-white.svg);
+    background-image: url(../../images/svg/burger-white.svg),
+      url(../../images/svg/burger-white.svg), url(../../images/svg/burger-white.svg);
   }
 }
 
@@ -197,7 +197,7 @@ a.header__lang--active:hover {
     right: 12px;
     width: 32px;
     height: 32px;
-    background-image: url(/images/svg/menu-close.svg);
+    background-image: url(../../images/svg/menu-close.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
@@ -208,7 +208,7 @@ a.header__lang--active:hover {
 }
 
 .background {
-  background-image: url(/images/svg/h.svg), $gradient-supersoft;
+  background-image: url(../../images/svg/h.svg), $gradient-supersoft;
   background-repeat: no-repeat;
   overflow: hidden;
   border-radius: 0 0 12px 12px;
@@ -323,7 +323,7 @@ a.header__lang--active:hover {
     &__logo--homepage {
       margin-top: 30px;
       background-size: 130px 60px;
-      background-image: url(/images/svg/logo-white.svg);
+      background-image: url(../../images/svg/logo-white.svg);
     }
 
     &__currentpage {

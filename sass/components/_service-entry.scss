@@ -1,5 +1,5 @@
 .header__logo.header__logo--services {
-  background-image: url(/images/svg/logo-white.svg), url(/images/svg/slash.svg);
+  background-image: url(../../images/svg/logo-white.svg), url(../../images/svg/slash.svg);
 }
 
 .header__currentpage--services {
@@ -15,7 +15,7 @@
   &__image {
     width: 92px;
     height: 92px;
-    background: #ffffff url(/images/svg/services/1.svg) no-repeat 50% 50%;
+    background: #ffffff url(../../images/svg/services/1.svg) no-repeat 50% 50%;
     background-size: 64px 64px;
     border-radius: 24px;
   }
