@@ -17,6 +17,8 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+    overflow: hidden;
+
 }
 
 // Container for content
@@ -24,7 +26,6 @@
   width: $mobile;
   margin: 0 auto;
   padding: 0 30px;
-  overflow: hidden;
   &--homepage {
     padding: 0;
   }
