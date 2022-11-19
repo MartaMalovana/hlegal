@@ -26,6 +26,9 @@
   &__link {
     margin-top: 10px;
     @include fontStyle($active-regular, $font-h4, $font-regular, 1.25);
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__link:hover {

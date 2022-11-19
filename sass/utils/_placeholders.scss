@@ -7,3 +7,8 @@
   top: 5px;
   left: -40px;
 }
+
+%animation {
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

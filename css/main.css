@@ -8,6 +8,11 @@
   left: -40px;
 }
 
+.service-entry__button, .slick-dots button, .contacts__email, .contacts__facebook svg, a.header__lang--active, .header__lang a, .header__lang--homepage li {
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   margin: 0;
 }
@@ -135,6 +140,9 @@ button {
 .header__lang--homepage {
   color: #fff;
 }
+.header__lang--homepage li {
+  transition-property: color;
+}
 .header__lang--homepage li:hover {
   color: #323264;
 }
@@ -144,15 +152,20 @@ button {
   align-items: center;
   width: 33px;
   height: 25px;
+  border-radius: 8px;
+  transition-property: all;
 }
 .header__lang a:hover {
-  border-radius: 8px;
   background-color: #f5f5fa;
 }
 .header__lang--active {
   color: #fff;
   background-color: #f0145a;
   border-radius: 8px;
+}
+
+a.header__lang--active {
+  transition-property: background-color;
 }
 
 a.header__lang--active:hover {
@@ -294,6 +307,9 @@ a.header__lang--active:hover {
     top: 50%;
     left: 50%;
     fill: #b3b3ba;
+    transition-property: fill;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__burger {
     display: none;
@@ -366,6 +382,9 @@ a.header__lang--active:hover {
     left: 0;
     bottom: -3px;
     background-color: transparent;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__menu--passive:hover::after {
     background-color: #24a3ff;
@@ -378,6 +397,9 @@ a.header__lang--active:hover {
     left: 0;
     bottom: -3px;
     background-color: #f0145a;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__menu--active:hover::after {
     background-color: #f0145a;
@@ -387,6 +409,9 @@ a.header__lang--active:hover {
   }
   .header__menu--homepage li {
     color: #fff;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__menu--homepage li:hover {
     color: #f0145a;
@@ -564,6 +589,9 @@ a.header__lang--active:hover {
   height: 42px;
   margin: 159px auto 0;
   background-image: url(/images/svg/scroll.svg);
+  transition-property: background-image;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(linear);
 }
 .hero .scroll:hover {
   background-image: url(/images/svg/scroll-pink.svg);
@@ -651,6 +679,9 @@ a.header__lang--active:hover {
 .advantages__item {
   margin-right: 30px;
   white-space: nowrap;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .advantages__item--active {
   background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
@@ -717,6 +748,9 @@ a.header__lang--active:hover {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(linear);
 }
 .services__link:hover {
   color: #f0145a;
@@ -730,6 +764,9 @@ a.header__lang--active:hover {
   height: 12px;
   background-image: url(/images/svg/arrow-right.svg);
   background-repeat: no-repeat;
+  transition-property: background-image;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(linear);
 }
 .services__link:hover::after {
   background-image: url(/images/svg/arrow-right-pink.svg);
@@ -781,6 +818,9 @@ a.header__lang--active:hover {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.219;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(linear);
 }
 .services__list .list__title:hover {
   color: #f0145a;
@@ -794,6 +834,9 @@ a.header__lang--active:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    margin-bottom: 60px;
+  }
   .hero__title {
     margin-top: 50px;
     font-size: 38px;
@@ -1104,6 +1147,7 @@ a.header__lang--active:hover {
   width: 38px;
   height: 38px;
   fill: #24a3ff;
+  transition-property: fill;
 }
 .contacts__facebook svg:hover {
   fill: #f0145a;
@@ -1120,6 +1164,7 @@ a.header__lang--active:hover {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.22;
+  transition-property: color;
 }
 .contacts__email:hover {
   color: #f0145a;
@@ -1272,6 +1317,7 @@ a.header__lang--active:hover {
 .slick-dots button {
   font-size: 0;
   margin: 0 auto;
+  transition-property: background-color;
 }
 
 .slider--homepage {
@@ -1515,6 +1561,9 @@ a.header__lang--active:hover {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.218;
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .publications__heading:hover {
   color: #f0145a;
@@ -1573,6 +1622,9 @@ a.header__lang--active:hover {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.218;
+  transition-property: background-color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .publications__buttons .publications__news {
   margin-right: 2px;
@@ -1581,7 +1633,8 @@ a.header__lang--active:hover {
 .publications__buttons .publications__articles:hover {
   background-color: #f5f5fa;
 }
-.publications__buttons .publication__active {
+.publications__buttons .publication__active,
+.publications__buttons .publication__active:hover {
   background-color: #fff;
 }
 .publications .publications__load {
@@ -1673,6 +1726,9 @@ a.header__lang--active:hover {
   height: 32px;
   border-radius: 50%;
   background: #f5f5fa url(/images/svg/arrow-team.svg) no-repeat 50% 50%;
+  transition-property: background-image;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__link:hover {
   background-image: url(/images/svg/arrow-team-hover.svg);
@@ -1785,6 +1841,9 @@ a.header__lang--active:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .person__link:hover {
   color: #f0145a;
@@ -1960,6 +2019,7 @@ a.header__lang--active:hover {
   line-height: 1.25;
   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
+  transition-property: background-color;
 }
 .service-entry__button:hover {
   background-color: #f0145a;
@@ -2103,4 +2163,7 @@ a.header__lang--active:hover {
     padding-left: 160px;
     padding-right: 160px;
   }
+}
+.process {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

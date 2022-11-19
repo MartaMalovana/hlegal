@@ -45,6 +45,8 @@
     @include fontStyle(#fff, $font-h4, $font-bold, 1.25);
     box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
     border-radius: 12px;
+    transition-property: background-color;
+    @extend %animation;
   }
 
   &__button:hover {

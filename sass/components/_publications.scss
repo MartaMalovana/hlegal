@@ -22,6 +22,9 @@
   &__heading {
     margin: 24px 30px 0;
     @include fontStyle($active-regular, $font-h4, $font-bold, 1.218);
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__heading:hover {
@@ -73,6 +76,9 @@
       background-color: inherit;
       border-radius: 10px;
       @include fontStyle(#000, $font-h4, $font-bold, 1.218);
+      transition-property: background-color;
+      transition-duration: 350ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
     }
 
     .publications__news {
@@ -84,7 +90,8 @@
       background-color: $decor-bg;
     }
 
-    .publication__active {
+    .publication__active,
+    .publication__active:hover {
       background-color: #fff;
     }
   }

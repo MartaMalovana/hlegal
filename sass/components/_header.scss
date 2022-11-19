@@ -98,18 +98,26 @@
   &--homepage {
     color: #fff;
 
+    li {
+      transition-property: color;
+      @extend %animation;
+    }
+
     li:hover {
       color: $main-color;
     }
   }
+
   a {
     @include flexpProps(center, center);
     width: 33px;
     height: 25px;
-  }
+    border-radius: 8px;
+    transition-property: all;
+    @extend %animation;
+}
 
   a:hover {
-    border-radius: 8px;
     background-color: $decor-bg;
   }
 
@@ -118,6 +126,10 @@
     background-color: $accent-color;
     border-radius: 8px;
   }
+}
+a.header__lang--active {
+  transition-property: background-color;
+  @extend %animation;
 }
 
 a.header__lang--active:hover {
@@ -269,6 +281,10 @@ a.header__lang--active:hover {
       top: 50%;
       left: 50%;
       fill: $decor-text;
+      transition-property: fill;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     }
 
     &__burger {
@@ -343,6 +359,8 @@ a.header__lang--active:hover {
       &--active,
       &--passive {
         position: relative;
+        // transition-property: background-color;
+        // @extend %animation;
       }
 
       &--passive::after {
@@ -353,6 +371,10 @@ a.header__lang--active:hover {
         left: 0;
         bottom: -3px;
         background-color: transparent;
+        transition-property: all;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
       }
 
       &--passive:hover::after {
@@ -367,7 +389,12 @@ a.header__lang--active:hover {
         left: 0;
         bottom: -3px;
         background-color: $accent-color;
+        transition-property: all;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
       }
+
       &--active:hover::after {
         background-color: $accent-color;
       }
@@ -380,6 +407,10 @@ a.header__lang--active:hover {
 
       li {
         color: #fff;
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
 
         &:hover {
           color: $accent-color;

@@ -29,6 +29,9 @@
     height: 42px;
     margin: 159px auto 0;
     background-image: url(/images/svg/scroll.svg);
+    transition-property: background-image;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(linear);
   }
 
   .scroll:hover {
@@ -114,6 +117,9 @@
   &__item {
     margin-right: 30px;
     white-space: nowrap;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &--active {
       background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
@@ -171,6 +177,9 @@
     position: relative;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(linear);
   }
 
   &__link:hover {
@@ -186,6 +195,9 @@
     height: 12px;
     background-image: url(/images/svg/arrow-right.svg);
     background-repeat: no-repeat;
+    transition-property: background-image;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(linear);
   }
 
   &__link:hover::after {
@@ -235,6 +247,10 @@
       width: 300px;
       margin-top: 30px;
       @include fontStyle($active-regular, $font-h3, $font-bold, 1.219);
+      transition-property: color;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(linear);
+    
     }
 
     .list__title:hover {
@@ -251,6 +267,8 @@
 // Tablet sd
 @media screen and (min-width: 768px) {
   .hero {
+    margin-bottom: 60px;
+  
     &__title {
       margin-top: 50px;
       font-size: 38px;
